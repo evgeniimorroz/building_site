@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SAFEHOUSE-gallery</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="styles/core.css">
+
+    <link rel="stylesheet" href="styles/animate.css">
+
+
+</head>
+<body>
+    <div class="page">
+        <div class="wrapper">
+            <header id="head">
+
+                <div class="header">
+                    <div class="header__logo">
+                        <a href="index.html">
+                        <svg class="logo-svg" contenteditable="" width="89" height="60" viewBox="0 0 89 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.0625 44.5989L44.0757 0.628906L44.0804 0.633609L44.0807 0.633289L63 19.481V8.00119H70V26.4545L88.2177 44.6033L82.5219 50.2935L44.084 12.0011L5.75833 50.2891L0.0625 44.5989ZM37.4102 36.1145H50.9574V59.5245H37.4102V36.1145Z" fill="white"/>
+                        </svg>
+                        </a>
+                    </div>
+                    <nav class="header__nav menu">
+                        <ul class="menu">
+                            <li class="header__nav-item" >
+                                <a href="portfolio.html" id="active" class="header__nav-link">Галерея</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="services.html" class="header__nav-link">Услуги</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="price.html" class="header__nav-link">Цены</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="contact.html" class="header__nav-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__tel">
+                        <div>
+                            <a class="call" href="tel:+380 (66) 937-99-92">+380 (66) 937-99-92</a>
+                        </div>
+                        <div class="header__tel-callback popup-open">
+                            <a href="#" id="callback">Заказать звонок</a>
+                        </div>
+                    </div>
+
+                        <div class="menuToggle icon">
+                           <div class="hamburger"></div>
+                       </div>
+
+                </div>
+
+                <div class="popup-fade">
+                    <div class="modal-consult" id="modal-header">
+                        <form action="telegram.php" method="POST" onsubmit="return checkFormTel()">
+                            <a class="popup-close" href="#">
+                                <i class="fas fa-times"></i>
+                            </a>
+                            <h3>Только телефон и мы в деле!</h3>
+                            <p>Все начинается с диалога... Мы перезвоним и сориентируем по срокам и стоимости и если все понравится - выедем на замер уже завтра.</p>
+                            <input id="tel-call" type="tel" class="phone-field" name="user_phone" placeholder="Номер телефона" required>
+                            <span class="error">неверный ввод</span>
+                            <input type="submit" value="Мы вам перезвоним"></input>
+                        </form>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="portfolio-wrapp">
+                    <div class="portfolio-title">
+                        <h2>Галерея наших работ</h2>
+                    </div>
+                    <section class="portfolio ">
+                        <div class="blocks-l wow fadeInRightBig">
+                            <div class="details">
+                                <h3>электрика</h3>
+                                <p>Строя дом необходимо проложить электрические цепи, подключить внутреннюю разводку, обеспечить работу всех электрических устройств. Собирая или ремонтируя автомобиль надо знать все тонкости электрической части. Эксплуатация любого предприятия не возможна без слесарей электриков, обслуживающих оборудование. И так можно перечислять до бесконечности, и везде требуется специалист, который разберется, подключит и исправит. </p>
+                            </div>
+
+                            <div class="l-inner">
+                                <img src="img/carusel/s1.jpg" alt="">
+                                <img src="img/carusel/s1.jpg" alt="">
+                                <img src="img/carusel/s1.jpg" alt="">
+                                <img src="img/carusel/s1.jpg" alt="">
+                                <img src="img/carusel/s1.jpg" alt="">
+                                <img src="img/carusel/s1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="blocks-r wow fadeInLeftBig">
+                            <div class="details">
+                                <h3>кровля</h3>
+                                <p>Крыша, кроме придания архитектурной выразительности сооружению, должна иметь достаточную прочность и надежность. Обеспечение прочностных характеристик крыши достигается путем установки на нее стропильных конструкций и обрешеткию</p>
+                            </div>
+                            <div class="l-inner">
+                                <img src="img/carusel/c1.jpg" alt="">
+                                <img src="img/carusel/c1.jpg" alt="">
+                                <img src="img/carusel/c1.jpg" alt="">
+                                <img src="img/carusel/c1.jpg" alt="">
+                                <img src="img/carusel/c1.jpg" alt="">
+                                <img src="img/carusel/c1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="blocks-l wow fadeInRightBig">
+                            <div class="details">
+                                <h3>плитка</h3>
+                                <p>Плитка в ванной или кухне является не только практичным, но и стильным материалом. Цветовые решения и узоры помогут Вам создать в помещении особую атмосферу. Не беспокойтесь: укладывать плитку с пошаговой инструкцией OBI не составит труда. * Продолжительность зависит от размеров помещения и материалов</p>
+                            </div>
+
+                            <div class="l-inner">
+                                <img src="img/carusel/p1.jpg" alt="">
+                                <img src="img/carusel/p1.jpg" alt="">
+                                <img src="img/carusel/p1.jpg" alt="">
+                                <img src="img/carusel/p1.jpg" alt="">
+                                <img src="img/carusel/p1.jpg" alt="">
+                                <img src="img/carusel/p1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="blocks-r wow fadeInLeftBig">
+                            <div class="details">
+                                <h3>кладка</h3>
+                                <p>Кажется, что никак нельзя ошибиться, когда кладёшь кирпич. Ну что может пойти не так? Ведь кирпич прямоугольный, и укладывая его рядами, в любом случае получишь ровную стену. Но всё не так просто. Есть множество нюансов, которые нужно учитывать при таких работах.</p>
+                            </div>
+                            <div class="l-inner">
+                                <img src="img/carusel/k1.jpg" alt="">
+                                <img src="img/carusel/k1.jpg" alt="">
+                                <img src="img/carusel/k1.jpg" alt="">
+                                <img src="img/carusel/k1.jpg" alt="">
+                                <img src="img/carusel/k1.jpg" alt="">
+                                <img src="img/carusel/k1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="blocks-l wow fadeInRightBig">
+                            <div class="details">
+                                <h3>отделка</h3>
+                                <p>Чистовые отделочные работы подразумевают собой нанесение на стены, потолки или пол финишного покрытия. Это могут быть обои или краска в случае стен или потолков, линолеум или паркет для напольного покрытия. ... Чтобы их отличить, необходимо знать, что ремонт – это замена элементов помещения, а отделка – это видоизменение.</p>
+                            </div>
+
+                            <div class="l-inner">
+                                <img src="img/carusel/o3.jpg" alt="">
+                                <img src="img/carusel/o3.jpg" alt="">
+                                <img src="img/carusel/o3.jpg" alt="">
+                                <img src="img/carusel/o3.jpg" alt="">
+                                <img src="img/carusel/o3.jpg" alt="">
+                                <img src="img/carusel/o3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="blocks-r wow fadeInLeftBig">
+                            <div class="details">
+                                <h3>сантехника</h3>
+                                <p>Слово сантехника происходит от сокращения словосочетания санитарная техника и обозначает различные технические средства, относящиеся к канализации, отоплению, водо- и теплоснабжению.
+
+                                    Обычно ремонт включает в себя замену старых трубопроводов и канализации на новые. Помимо замены труб, часто улучшению подвергается и сама разводка, трубы прокладываются в более удобных местах, делаются всевозможные отводы.</p>
+                            </div>
+                            <div class="l-inner">
+                                <img src="img/carusel/e1.jpg" alt="">
+                                <img src="img/carusel/e1.jpg" alt="">
+                                <img src="img/carusel/e1.jpg" alt="">
+                                <img src="img/carusel/e1.jpg" alt="">
+                                <img src="img/carusel/e1.jpg" alt="">
+                                <img src="img/carusel/e1.jpg" alt="">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <footer>
+                <div class="footer">
+                    <div class="footer-inner">
+                        <div class="inner-contacts">
+                            <div class="contacts">
+                                <span>
+                                    <a class="call" href="tel:+380 (66) 937-99-92">+380 (66) 937-99-92</a>
+                                </span><br>
+                            </div>
+                            <div class="mail">
+                                <a class="call" href="mailto:info@mail.com">info@mail.com</a>
+                            </div>
+                        </div>
+                            <nav class="inner__nav">
+                                <ul>
+                                    <li class="footer__nav-item">
+                                        <a href="portfolio.html" class="footer__nav-link">Галерея</a>
+                                    </li>
+                                    <li class="footer__nav-item">
+                                        <a href="services.html" class="footer__nav-link">Услуги</a>
+                                    </li>
+                                    <li class="footer__nav-item">
+                                        <a href="price.html" class="footer__nav-link">Цены</a>
+                                    </li>
+                                    <li class="footer__nav-item">
+                                        <a href="contact.html" class="footer__nav-link">Контакты</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        <div class="inner-about">
+
+                            <div class="inner-logo">
+                                <a href="#head">
+                                    <svg class="logo-svg" contenteditable="" width="89" height="60" viewBox="0 0 89 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.0625 44.5989L44.0757 0.628906L44.0804 0.633609L44.0807 0.633289L63 19.481V8.00119H70V26.4545L88.2177 44.6033L82.5219 50.2935L44.084 12.0011L5.75833 50.2891L0.0625 44.5989ZM37.4102 36.1145H50.9574V59.5245H37.4102V36.1145Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="logo">
+                                <span>&#169;</span><span> SAFEHOUSE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="scripts/modal-callback.js"></script>
+
+    <script src="scripts/mobile-menu.js"></script>
+
+    <script src="scripts/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+</html>

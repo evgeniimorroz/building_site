@@ -1,0 +1,144 @@
+.section__services{
+    max-width: 1300px;
+    min-width: 320px;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+.section__services-inner {
+    width: 95%;
+    margin: auto;
+}
+
+.services-container {
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+    font-style: var(--sec-font);
+}
+
+.section__services-inner-title {
+    padding-top: 5%;
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5em;
+    line-height: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    border-bottom: 5px solid var(--color-orange);
+}
+
+.l-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.l-block-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.l-block-item span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--sec-font);
+    font-size: .8em;
+    text-align: center;
+}
+
+.l-block-item .pict {
+    position: absolute;
+    left: 8%;
+    bottom: 5%;
+    transform: translate(-50%, -50%);
+}
+
+.r-block {
+    /* width: 50%;
+    height: inherit; */
+        width: 520px;
+    margin-left: auto;
+    position: relative;
+}
+
+.r-block  img {
+    width: 100%;
+}
+
+.l-block {
+    width: 30%;
+}
+.l-block-item {
+    width: 100%;
+}
+.block-img img {
+    width: 100%;
+}
+
+.r-block-inner {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.r-block-inner h3 {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.7em;
+    line-height: 1.7em;
+    letter-spacing: 0.05em;
+    color: var(--color-orange);
+    text-align: center;
+}
+
+.services-list li{
+    padding: .2em 0;
+    font-family: var(--sec-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.2em;
+    letter-spacing: 0.05em;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.services-list li:hover {
+    color: var(--color-hover);
+}
+
+.section__services-description {
+    margin-top: 5%;
+}
+
+.section__services-description p{
+    font-family: var(--sec-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    text-align: justify;
+    letter-spacing: 0.05em;
+    color: var(--color-white);
+}
+.section__services-description h4{
+    text-align: center;
+    margin-top: 2%;
+    font-family: var(--sec-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5em;
+    line-height: 1.8em;
+    color: var(--color-orange);
+}

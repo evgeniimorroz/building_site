@@ -1,0 +1,141 @@
+.section__work {
+    padding: 5% 2%;
+    position:relative;
+}
+
+.section__work-bg {
+    background-image: url('../img/rec1.png');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: brightness(40%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.section__work-inner {
+    max-width: 1300px;
+    min-width: 320px;
+    margin: auto;
+}
+
+.inner-title {
+    padding-top: 5%;
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5em;
+    line-height: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+
+}
+
+.inner-block-480{
+    position: relative;
+    display: none;
+}
+.inner-block-480{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+
+.inner-title::before {
+    content: '';
+    width: 200px;
+    height: 5px;
+    background-color: var(--color-orange);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.inner-title::after {
+    content: '';
+    width: 200px;
+    height: 5px;
+    background-color: var(--color-orange);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.inner-title h2 {
+    width: 40%;
+    margin: auto;
+    border-bottom: 5px solid transparent;
+}
+.inner-title h2:hover {
+    color: var(--color-orange);
+    border-bottom: 5px solid var(--color-orange);
+    transition: var(--transition);
+}
+
+
+.inner-block {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+.digits {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4em;
+    letter-spacing: 0.05em;
+    color: var(--color-hover);
+}
+
+.block-1, .block-2 {
+    display: flex;
+    margin: 5% 0 5% 0%;
+}
+
+.block-item {
+    width: 30%;
+    height: 4em;
+
+    display: flex;
+    align-items: center;
+}
+
+.ml {
+    margin-left: auto;
+}
+
+.inner-block  p {
+    font-family: var(--sec-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: .9em;
+    line-height: 1.1em;
+    letter-spacing: 0.05em;
+    color: var(--color-white);
+    padding-left: 5%;
+    transition: var(--transition);
+}
+
+.inner-block  p:hover {
+    color: var(--color-orange);
+    transition: var(--transition);
+}
+
+.block-3 {
+    width: 28%;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 5%;
+}

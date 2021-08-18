@@ -1,0 +1,508 @@
+/*-----------секция header-------------*/
+@media( max-width: 1170px){
+    .header__nav-item {
+        padding-right: 2em;
+    }
+    .header__title-title h1{
+        font-size: 2em;
+    }
+    .header__title-title span{
+        font-size: 1.15em;
+    }
+}
+@media( max-width: 992px){
+    .header__nav-item {
+    padding-right: 1em;
+    }
+    .logo-svg {
+        width: 69px;
+        height: 50px;
+    }
+    .header__title-title h1 {
+    font-size: 1.8em;
+    }
+    .header__title-title span {
+    font-size: 1em;
+    }
+    .header__nav-item {
+        font-size: .7em;
+    }
+    .call{
+        font-size: .7em;
+    }
+    .header__tel-callback {
+        font-size: .7em;
+    }
+    .error {     
+        left: 24%;
+        bottom: 28%;
+        font-size: .6em;
+    }
+
+}
+@media( max-width: 840px){
+    .header__title {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .header__title-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+    }
+    .header__title-title h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .header__title-title span{
+        font-size: .8em;
+        margin-top: 1%;
+        text-align: center;
+    }
+    .header__slider-body:before {
+        top: -7%;
+        left: -27%;
+        width: 150%;
+        height: 110%;
+        border: 5px solid var(--color-orange);
+    }
+    .header__title-title button {
+        width: 300px;
+        height: 50px;
+        font-size: .8em;
+        line-height: 1em;
+
+    }
+}
+    @media( max-width: 768px){
+        .header__nav-item {
+            font-size: .6em;
+        }
+        .header__tel {
+            display: none;
+        }
+        .menuToggle{
+            margin-right: 2%;
+            padding: 0;
+        }
+        .logo-svg {
+            width: 59px;
+            height: 40px;
+        }
+        .modal-consult h3, .modal-consult-rate h3{
+            font-size: 1em;
+        }
+        .modal-consult p, .modal-consult-rate p {
+            font-size: .5em;
+        }
+        .modal-consult input[type="submit"], .modal-consult-rate p {
+            font-size: .5em;
+        }
+        .phone-field {
+            font-size: .5em;
+        }
+    }
+    @media( max-width: 660px){
+        .header__title-title h1 {
+            font-size: 1.2em;
+
+        }
+        .header__title-title span{
+            font-size: .7em;
+            margin-top: 1%;
+
+        }
+        .error {
+            position: absolute;
+            left: 25%;
+            bottom: 25%;      
+            font-size: .5em;
+        }
+
+
+    }
+    @media( max-width: 480px){
+        .header__nav ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 25%;
+        }
+        .menuToggle{
+            margin: -5%;
+        }
+        .header__nav-item {
+            font-size: .5em;
+        }
+    }
+/*---------------------секция work----------------------*/
+@media( max-width: 10000px) {
+    .inner-block-480{
+        display: none;
+    }
+}
+@media( max-width: 1160px){
+    .inner-title {
+        font-size: 1.2em;
+        line-height: 1.7em;
+    }
+    .inner-title h2 {
+        width: 50%;
+    }
+    .digits {
+        font-size: 3em;
+    }
+    .inner-block p {
+        font-size: .6em;
+    }
+}
+    @media( max-width: 768px){
+        .inner-title h2 {
+            width: 100%;
+        }
+        .inner-title {
+            font-size: 1em;
+            line-height: 1.4em;
+        }
+        .digits {
+            font-size: 2.3em;
+        }
+        .inner-block p {
+            font-size: .5em;
+        }
+    }
+        @media( max-width: 480px){
+            .inner-title::before,.inner-title::after{
+                display: none;
+            }
+            .inner-block-480{
+                display: block;
+            }
+            .inner-block{
+                display: none;
+            }
+            .block-item{
+                width: 96%;
+                margin: auto;
+            }
+            .block-item p {
+                font-family: var(--sec-font);
+                font-style: normal;
+                font-weight: normal;
+                font-size: .7em;
+                line-height: 1.1em;
+                letter-spacing: 0.05em;
+                color: var(--color-white);
+                padding-left: 5%;
+                transition: var(--transition);
+            }
+        }
+/*------------секция rates-------------*/
+@media( max-width: 768px){
+    .rates-inner-title{
+        font-size: .7em;
+    }
+    .section {
+        margin-bottom: 5%;
+    }
+
+}
+/*------------секция about-------------*/
+@media( max-width: 992px){
+    .about-inner-block {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .inner-slide {
+        width: 320px;
+        margin-left: 0;
+        margin-top: 8%;
+    }
+
+}
+@media( max-width: 768px){
+    .info-title h2 {
+    font-size: 2.5em;
+    }
+    .about-info-list li {
+        font-size: .7em;
+
+    }
+
+}
+/*------------секция gallery-------------*/
+@media( max-width: 992px){
+    .gallery-inner-title {
+        font-size: 1.2em;
+        line-height: 1.6em;
+    }
+}
+@media( max-width: 768px){
+    .section__gallery-inner {
+        margin-bottom: 10%;
+    }
+    .gallery-body {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .gallery-item img {
+        width: 90%;
+    }
+    .boreder::before{
+        width: 90%;
+    }
+    .gallery-inner-title {
+        font-size: 1em;
+        line-height: 1.4em;
+    }
+    .gallery-item .img-text{
+        font-size: .8em;
+        padding: 2em;
+    }
+
+
+}
+@media( max-width: 660px){
+    .gallery-inner-title::before,.gallery-inner-title::after{
+        display: none;
+    }
+    .gallery-inner-title h2{
+        width: 90%;
+    }
+}
+@media( max-width: 480px){
+    .gallery-body {
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin-bottom: 170%;
+        margin-left: 30%;
+    }
+    .gallery-item img {
+        width: 70%;
+    }
+    .boreder::before{
+        width: 70%;
+    }
+    .section__gallery-inner {
+        margin-bottom: 20%;
+    }
+    .gallery-item .img-text{
+        left: 35%;
+        font-size: .8em;
+        width: 84%;
+    }
+}
+
+/*------------секция forms-------------*/
+@media( max-width: 992px){
+    .section__form-inner .inner-text h3{
+        font-size: 1.1em;
+        line-height: 1.3em;
+    }
+    .section__form-inner .inner-text p{
+        font-size: .8em;
+        line-height: 1em;
+    }
+
+}
+@media( max-width: 768px){
+    .section__form-inner .inner-block{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .inner-text {
+        width: 70%;
+    }
+    .inner-form {
+        width: 350px;
+    }
+    .inner-form input[type="submit"]{
+        font-size: .7em;
+    line-height: 1.1em;
+    }
+
+}
+
+@media( max-width: 480px){
+
+    .inner-text {
+        width: 90%;
+    }
+    .inner-form {
+        width: 350px;
+    }
+
+}
+@media( max-width: 390px){
+
+    .inner-form {
+        width: 300px;
+    }
+}
+/*------------секция footer-------------*/
+@media( max-width: 992px){
+    footer{
+        font-size: .7em;
+    }
+
+
+}
+@media( max-width: 400px){
+    .footer-inner{
+        flex-direction: column;
+        margin-left: 15%;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .inner-contacts{
+        margin-bottom: 5%;
+    }
+    .inner__nav{
+        margin-bottom: 5%;
+    }
+    .inner-about {
+        margin-left: -7%;
+    }
+}
+
+
+/*-----------страница портфолио--------------*/
+
+@media( max-width: 768px){
+    .l-inner {
+        width: 50%;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 1em;
+        margin: 0 1em;
+    }
+    .portfolio-title {
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+    .blocks-l .details p, .blocks-r .details p  {
+        font-size: .8em;
+        line-height: 1.2em;
+    }
+    .details h3{
+        font-size: 1.2em;
+    }
+}
+@media( max-width: 768px){
+    .blocks-l, .blocks-r {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .blocks-r .details, .details {
+        width: 100%;
+        margin:0 auto 5%;
+    }
+    .portfolio-title {
+        font-size: 1em;
+        line-height: 1.2em;
+    }
+
+}
+
+/*-----------------страница сервисы-------------*/
+@media( max-width: 992px){
+    .section__services-inner-title {
+        font-size: 1.2em;
+        line-height: 1.6em;
+    }
+    .r-block-inner h3 {
+        font-size: 1.4em;
+        line-height: 1.6em;
+    }
+    .services-list li{
+        font-size: .8em;
+        line-height: 1.2em;
+    }
+    .r-block {
+        width: 420px;
+    }
+}
+@media( max-width: 768px){
+    .services-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .l-block {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .l-block-item .pict {
+        width: 10%;
+    }
+    .l-block-item span {
+        font-size: .7em;
+    }
+    .r-block {
+        margin: 5% 0 0 0;
+    }
+}
+@media( max-width: 450px){
+    .section__services-inner-title {
+        font-size: 1em;
+        line-height: 1.1em;
+    }
+    .r-block {
+        width: 300px;
+        font-size: .6em;
+    }
+    .l-block-item span {
+        font-size: .5em;
+    }
+    .section__services-description p {
+        font-size: .8em;
+        line-height: 1.1em;
+    }
+    .section__services-description h4 {
+        font-size: 1em;
+        line-height: 1.4em;
+    }
+}
+
+/*-------------------страница price-------------------*/
+@media( max-width: 992px){
+    .section__price-title{
+        font-size: 1.2em;
+        line-height: 1.6em;
+    }
+    tbody {
+        font-size: .8em;
+    }
+    .price-item {
+        font-size: .8em;
+    }
+}
+@media( max-width: 500px){
+    .section__price-title{
+        font-size: 1em;
+        line-height: 1.2em;
+    }
+    tbody {
+        font-size: .7em;
+    }
+    .price-item {
+        font-size: .7em;
+    }
+    .load-price button {
+        font-size: .9em;
+        line-height: 1.1em;
+    }
+}

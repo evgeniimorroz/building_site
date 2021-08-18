@@ -1,0 +1,39 @@
+footer {
+    width: 100%;
+    border-top: 3px solid var(--color-white);
+    padding: 0 2%;
+}
+
+.footer {
+    margin-top: 10%;
+    max-width: 1300px;
+    min-width: 320px;
+    margin: auto;
+    padding-bottom: 2%;
+}
+
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--sec-font);
+}
+
+.inner-contacts .contacts{
+    padding: 1em 0;
+}
+
+.footer__nav-item {
+    padding-top: .5em;
+    border-bottom: 3px solid transparent;
+}
+
+.footer__nav-item:hover {
+    color: var(--color-orange);
+    border-bottom: 3px solid var(--color-orange);
+    transition: var(--transition);
+}
+
+.inner-about .inner-logo {
+    margin: 0 0 10% 20%;
+}

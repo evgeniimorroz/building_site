@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SAFEHOUSE</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles/core.css">
+
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="scripts/slick/slick.css">
+    <link rel="stylesheet" href="scripts/slick/slick-theme.css">
+    <link rel="stylesheet" href="scripts/modal/style.css" type="text/css">
+</head>
+<body>
+    <div class="preloader">
+      <div class="preloader-img"></div>
+    </div>
+    <div class="page">
+        <div class="wrapper">
+
+            <header id="head">
+
+                <div class="header">
+                    <div class="header__logo">
+                        <a href="index.html" class="index-active">
+                        <svg id="logo-active" class="logo-svg " contenteditable="" width="89" height="60" viewBox="0 0 89 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.0625 44.5989L44.0757 0.628906L44.0804 0.633609L44.0807 0.633289L63 19.481V8.00119H70V26.4545L88.2177 44.6033L82.5219 50.2935L44.084 12.0011L5.75833 50.2891L0.0625 44.5989ZM37.4102 36.1145H50.9574V59.5245H37.4102V36.1145Z" fill="white"/>
+                        </svg>
+                        </a>
+                    </div>
+                    <nav class="header__nav menu">
+                        <ul class="menu">
+                            <li class="header__nav-item">
+                                <a href="portfolio.html" class="header__nav-link">галерея</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="services.html" class="header__nav-link">Услуги</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="price.html" class="header__nav-link">Цены</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="contact.html" class="header__nav-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__tel">
+                        <div>
+                            <a class="call" href="tel:+380 (66) 937-99-92">+380 (66) 937-99-92</a>
+                        </div>
+                        <div class="header__tel-callback popup-open">
+                            <a href="#" id="callback">Заказать звонок</a>
+                        </div>
+                    </div>
+
+                        <div class="menuToggle icon">
+                           <div class="hamburger"></div>
+                       </div>
+
+                </div>
+                <div class="header__title">
+                    <div class="header__title-title">
+                        <h1>Строительство
+                        и ремонт<br><span id="cityAPI3"></span> </h1>
+                        <span>Надежное будущее строим
+                        вместе  </span>
+                        <a href="#contact"><button  type="button" name="button">Получить консультацию </button></a>
+                    </div>
+                    <div class="header__slider-body">
+                            <div class=" slider">
+                                <div class="slider-line">
+                                    <img src="img/slide_header1.png" alt="">
+                                    <img src="img/slide_header2.png" alt="">
+                                    <img src="img/slide_header1.png" alt="">
+                                    <img src="img/slide_header2.png" alt="">
+                                    <img src="img/slide_header1.png" alt="">
+                                </div>
+                                <img src="svg/arrow_left.svg" class="a-left prev" >
+                                <img src="svg/arrow_right.svg" class="a-right next" >
+                            </div>
+                    </div>
+                </div>
+                <div class="popup-fade">
+                    <div class="modal-consult" id="modal-header">
+                        <form action="telegram.php" method="POST" onsubmit="return checkFormTel()">
+                            <a class="popup-close" href="#">
+                                <i class="fas fa-times"></i>
+                            </a>
+                            <h3>Только телефон и мы в деле!</h3>
+                            <p>Все начинается с диалога... Мы перезвоним и сориентируем по срокам и стоимости и если все понравится - выедем на замер уже завтра.</p>
+                            <input id="tel-call" type="tel" class="phone-field" name="user_phone" placeholder="Номер телефона" required>
+                            <span class="error">неверный ввод</span>
+                            <input type="submit" value="Мы вам перезвоним"></input>
+                        </form>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <section class="section__work">
+                    <div class="section__work-bg"></div>
+                    <div class="section__work-inner">
+                        <div class="inner-title wow slideInUp" data-wow-duration="2s">
+                            <h2 class="">КАК МЫ РАБОТАЕМ</h2>
+                        </div>
+                        <div class="inner-block">
+                            <div class="block-1 wow zoomIn" data-wow-duration="1.6s">
+                                <div class="block-item">
+                                    <span class="digits ">01</span>
+                                    <p>Бесплатный выезд мастера на объект для оценки работы </p>
+                                </div>
+                                <div class="block-item ml">
+                                    <span class="digits">03</span>
+                                    <p>Оформление и подписание договора</p>
+                                </div>
+                            </div>
+                            <div class="block-2 wow zoomIn" data-wow-duration="1.8s">
+                                <div class="block-item">
+                                    <span class="digits">02</span>
+                                    <p>Обсуждение работы с заказчиком </p>
+                                </div>
+                                <div class="block-item ml">
+                                    <span class="digits">04</span>
+                                    <p>Выполнение работ в соответствии с пожеланиями заказчика</p>
+                                </div>
+                            </div>
+                            <div class="block-3 wow zoomIn" data-wow-duration="2s">
+                                    <span class="digits">05</span>
+                                    <p>Прием работы заказчиком  и окончательный расчет</p>
+                            </div>
+                        </div>
+                        <div class="inner-block-480" >
+                            <div class="block-item wow bounceInLeft" data-wow-duration="1s">
+                                <span class="digits ">01</span>
+                                <p>Бесплатный выезд мастера на объект для оценки работы </p>
+                            </div>
+                            <div class="block-item wow bounceInLeft" data-wow-duration="1.5s">
+                                <span class="digits">03</span>
+                                <p>Оформление и подписание договора</p>
+                            </div>
+                            <div class="block-item wow bounceInLeft" data-wow-duration="2s">
+                                <span class="digits">02</span>
+                                <p>Обсуждение работы с заказчиком </p>
+                            </div>
+                            <div class="block-item wow bounceInLeft" data-wow-duration="2.5s">
+                                <span class="digits">04</span>
+                                <p>Выполнение работ в соответствии с пожеланиями заказчика</p>
+                            </div>
+                            <div class="block-item wow bounceInLeft" data-wow-duration="3s">
+                                    <span class="digits">05</span>
+                                    <p>Прием работы заказчиком  и окончательный расчет</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section__rates">
+                    <div class="section__rates-inner">
+                        <div class="rates-inner-title">
+                            <h2>Стоимость ремонта рассчитывается индивидуально</h2>
+                        </div>
+                        <div class="rates-body">
+                            <div class="section section-1 wow slideInUp"  data-wow-duration ="1s">
+                                    <div class="cart-img">
+                                        <img src="img/i2.jpg" alt="">
+                                    </div>
+                                    <h5>Ориентировочная стоимость</h5>
+                                    <h3>Ремонт во вторичном жилье</h3>
+                                    <div class="coast">
+                                        <span>от </span><span style="color:#FF7A00">130 &#36;</span>
+                                    </div>
+                                    <p>*Стоимость указана исходя из опыта наших предидущих ремонтов похожего класса объектов
+                                    </p>
+                                    <button type="button" class="popup-open-rate" name="claaback-btn">Консультация</button>
+
+
+                            </div>
+                            <div class="section section-2  wow slideInUp" data-wow-duration ="1.3s">
+                                    <div class="cart-img">
+                                        <img src="img/i2.jpg" alt="">
+                                    </div>
+                                    <h5>Ориентировочная стоимость</h5>
+                                    <h3>Ремонт новостройки</h3>
+                                    <div class="coast">
+                                        <span>от </span><span style="color:#FF7A00">110 &#36;</span>
+                                    </div>
+                                    <p>*Стоимость указана исходя из опыта наших предидущих ремонтов похожего класса объектов
+                                    </p>
+                                    <button class="popup-open-rate" type="button" name="claaback-btn">Консультация</button>
+                            </div>
+                            <div class="section section-3  wow slideInUp" data-wow-duration ="1.6s">
+                                    <div class="cart-img">
+                                        <img src="img/i2.jpg" alt="">
+                                    </div>
+                                    <h5>Ориентировочная стоимость</h5>
+                                    <h3>Ремонт офиса</h3>
+                                    <div class="coast">
+                                        <span>от </span><span style="color:#FF7A00">100 &#36;</span>
+                                    </div>
+                                    <p>*Стоимость указана исходя из опыта наших предидущих ремонтов похожего класса объектов
+                                    </p>
+                                    <button class="popup-open-rate" type="button" name="claaback-btn">Консультация</button>
+                            </div>
+                            <div class="section section-4  wow slideInUp" data-wow-duration ="2s">
+
+                                    <div class="cart-img">
+                                        <img src="img/i2.jpg" alt="">
+                                    </div>
+                                    <h5>Ориентировочная стоимость</h5>
+                                    <h3>Ремонт и отделка домов</h3>
+                                    <div class="coast">
+                                        <span>от </span><span style="color:#FF7A00">150 &#36;</span>
+                                    </div>
+                                    <p>*Стоимость указана исходя из опыта наших предидущих ремонтов похожего класса объектов
+                                    </p>
+                                    <button class="popup-open-rate" type="button" name="claaback-btn">Консультация</button>
+
+                            </div>
+                            </div>
+
+                    </div>
+                    <div class="popup-fade-rate">
+                        <div class="modal-consult-rate" id="modal-rate">
+                            <form action="telegram.php" method="POST" onsubmit="return checkFormTel()">
+                                <a class="popup-close" href="#">
+                                    <i class="fas fa-times"></i>
+                                </a>
+                                <h3>Только телефон и мы в деле!</h3>
+                                <p>Все начинается с диалога... Мы перезвоним и сориентируем по срокам и стоимости и если все понравится - выедем на замер уже завтра.</p>
+                                <input id="tel-call" type="tel" class="phone-field" name="user_phone" placeholder="Номер телефона" required>
+                                <span class="error">неверный ввод</span>
+                                <input type="submit" value="Мы вам перезвоним"></input>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <section class="section__about">
+                    <div class="section__about-bg"></div>
+                    <div class="section__about-inner">
+                        <div class="about-inner-block">
+                            <div class="inner-info">
+                                <div class="info-title">
+                                    <h2>О НАС</h2>
+                                    <nav>
+                                        <ul class="about-info-list" >
+                                            <li class="wow bounceInLeft" data-wow-duration="1.5s">Качественное проведение работ</li>
+                                            <li class="wow bounceInLeft" data-wow-duration="1.9s">Обсуждение работы на каждом этапе</li>
+                                            <li class="wow bounceInLeft" data-wow-duration="2.3s">Профессиональный инструмент</li>
+                                            <li class="wow bounceInLeft" data-wow-duration="2.7s">Начинаем работу без аванса</li>
+                                            <li class="wow bounceInLeft" data-wow-duration="3.1s">Доступные цены</li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="inner-slide">
+                                <div class="slider-sec">
+                                    <div class="slider-sec-line">
+                                        <div class="line-items">
+                                            <div class="slide">
+                                                <img src="img/ec1.png" alt="">
+                                            </div>
+                                            <div class="slide">
+                                                <img src="img/ec2.png" alt="" >
+                                            </div>
+                                            <div class="slide">
+                                                <img src="img/ec3.png" alt="" >
+                                            </div>
+                                            <div class="slide">
+                                                <img src="img/ec2.png" alt="" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <section class="section__gallery">
+                    <div class="section__gallery-inner">
+                        <div class="gallery-inner-title">
+                            <h2>ГАЛЕРЕЯ РАБОТ</h2>
+                        </div>
+                        <div class="gallery-body">
+                            <div class="boreder">
+                                <div class="gallery-item">
+                                    <a href="img/re1.png" class="lightzoom">
+                                        <img src="img/re1.png" alt="">
+                                    </a>
+                                    <div class="img-text">ПЛИТКА</div>
+                                </div>
+                            </div>
+                            <div class="boreder">
+                                <div class="gallery-item">
+                                    <a href="img/re2.png" class="lightzoom">
+                                        <img src="img/re2.png"  alt="">
+                                    </a>
+                                    <div class="img-text">КЛАДКА</div>
+                                </div>
+                            </div>
+                            <div class="boreder">
+                                <div class="gallery-item">
+                                    <a href="img/re3.png" class="lightzoom">
+                                        <img src="img/re3.png"  alt=""></a>
+                                    <div class="img-text">ОТДЕЛКА</div>
+                                </div>
+                            </div>
+                            <div class="boreder">
+                                <div class="gallery-item">
+                                    <a href="img/re4.png" class="lightzoom">
+                                        <img src="img/re4.png"  alt=""></a>
+                                    <div class="img-text">КРОВЛЯ</div>
+                                </div>
+                            </div>
+                            <div class="boreder">
+                                <div class="gallery-item">
+                                    <a href="img/re5.png" class="lightzoom">
+                                        <img src="img/re5.png"  alt=""></a>
+                                    <div class="img-text">САНТЕХНИКА</div>
+                                </div>
+                            </div>
+                            <div class="boreder">
+                                <div class="gallery-item">
+                                    <a href="img/re6.png" class="lightzoom">
+                                        <img src="img/re6.png"  alt=""></a>
+                                    <div class="img-text">ЭЛЕКТРИКА</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section__form" id="contact">
+                    <div class="section__form-bg"></div>
+                    <div class="section__form-inner">
+                        <div class="inner-block">
+                            <div class="inner-text">
+                                <h3>построим то, что вам нужно</h3>
+                                <p>Доверьте строительство своего объекта надежному застройщику. Мы выполним все работы с соблюдением сроков и всех стандартов качаства.</p>
+                                <p>Чтобы обсудить ваш проект - свяжитесь с нами по телефону <strong><i>+380 (66) 937-99-92 </i></strong>или заполните форму и мы сами вам перезвоним.</p>
+                                <div class="socials">
+                                    <div class="socials-line">
+                                        <i class="fas fa-phone-alt"></i>
+                                        <a class="call" href="tel:+380 (66) 937-99-92"><span>+380 (66) 937-99-92</span></a>
+                                    </div>
+                                    <div class="socials-line">
+                                        <i class="far fa-envelope"></i>
+                                        <a href="mailto:info@mail.com"><span class="mail">info@mail.com</span></a>
+                                    </div>
+                                    <div class="socials-line">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span class="city" id="cityAPI1"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <form  action="mail.php" method="POST" onsubmit="return checkFormMain()">
+                                <div class="inner-form">
+                                    <h3>Будем на связи</h3>
+                                    <label for="name">
+                                        <input type="text" id="name" name="user_name" placeholder="Ваше имя" required>
+                                        <span class="error-1form">неверный ввод</span>
+
+                                    </label>
+                                    <label for="tel2">
+                                        <input type="tel" id="tel2" name="user_phone" placeholder="Номер телефона" required>
+                                        <span class="error-2form">неверный ввод</span>
+
+                                    </label>
+                                    <label for="mail">
+                                        <input type="email" id="mail" name="user_email" placeholder="Почта" required>
+                                        <span class="error-3form">неверный ввод</span>
+                                    </label>
+                                        <textarea name="text" rows="10" cols="20"></textarea>
+
+                                    <button type="submit" id="btn-form" >Получить консультацию</button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+            <footer>
+                <div class="footer">
+                    <div class="footer-inner">
+                        <div class="inner-contacts">
+                            <div class="contacts">
+                                <span>
+                                    <a class="call" href="tel:+380 (66) 937-99-92">+380 (66) 937-99-92</a>
+                                </span><br>
+
+
+                            </div>
+                            <div class="mail">
+                                <a class="call" href="mailto:info@mail.com">info@mail.com</a>
+                            </div>
+                        </div>
+                            <nav class="inner__nav">
+                                <ul>
+                                    <li class="footer__nav-item">
+                                        <a href="portfolio.html" class="footer__nav-link">Галерея</a>
+                                    </li>
+                                    <li class="footer__nav-item">
+                                        <a href="services.html" class="footer__nav-link">Услуги</a>
+                                    </li>
+                                    <li class="footer__nav-item">
+                                        <a href="price.html" class="footer__nav-link">Цены</a>
+                                    </li>
+                                    <li class="footer__nav-item">
+                                        <a href="contact.html" class="footer__nav-link">Контакты</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        <div class="inner-about">
+
+                            <div class="inner-logo">
+                                <a href="#head">
+                                    <svg class="logo-svg" contenteditable="" width="89" height="60" viewBox="0 0 89 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.0625 44.5989L44.0757 0.628906L44.0804 0.633609L44.0807 0.633289L63 19.481V8.00119H70V26.4545L88.2177 44.6033L82.5219 50.2935L44.084 12.0011L5.75833 50.2891L0.0625 44.5989ZM37.4102 36.1145H50.9574V59.5245H37.4102V36.1145Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="logo">
+                                <span>&#169;</span><span> SAFEHOUSE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="scripts/slick.main.js"></script>
+    <script src="scripts/slick/slick.min.js"></script>
+    <script src="scripts/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/modal-callback.js"></script>
+    <script src="scripts/modal-rate.js"></script>
+    <script src="scripts/modal-main.js"></script>
+    <script src="scripts/API.js"></script>
+    <script src="scripts/mobile-menu.js"></script>
+
+    <script type="text/javascript" src="scripts/modal/lightzoom.js"></script>
+        <script type="text/javascript">
+        jQuery('.lightzoom').lightzoom({
+            speed: 400,
+            viewTitle: true,
+            isWindowClickClosing : true,
+            isEscClosing:true,
+        });
+
+        $(function() {
+          setTimeout(function() {
+            $('body').addClass('loaded');
+        }, 3000);
+        });
+        </script>
+
+</body>
+</html>

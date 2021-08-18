@@ -1,0 +1,206 @@
+@import "header.css";               /*секция header*/
+@import "work.css";                 /*секция work*/
+@import "services.css";             /*страница services*/
+@import "form-section.css";         /*основная форма на странице contact*/
+@import "about.css";                /*секция about*/
+@import "gallery.css";              /*секция gallery*/
+@import "price.css";                /*страница price*/
+@import "rates.css";                /*секция rates*/
+@import "footer.css";               /*секция footer*/
+@import "modal-callback.css";       /*стили к модалке по "заказать звонок"*/
+@import "modal-rate.css";           /*стили к модалке в секции rates*/
+@import "portpholio.css";
+@import "adaptive.css";
+@import "contact.css";
+@import "404.css";
+
+
+:root {
+    --main-font: 'Istok Web', sans-serif; /*Заголовок*/
+    --sec-font: 'Montserrat', sans-serif;/*regular 400, medium 500, bold 700 */
+    --color-black: #0F0F0F;
+    --color-dark-grey: #1C1D1E;
+    --color-grey:  #3D3D3D;
+    --color-orange: #FF7A00;
+    --color-white: #FFFFFF;
+    --color-hover: rgba(255, 122, 0, 0.5);
+    --transition: all ease .3s;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+html {
+    scroll-behavior: smooth;
+
+}
+a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+li {
+    list-style: none;
+}
+
+
+.page {
+    font-size: 20px;
+    color: var(--color-white);
+    width: 100%;
+    height: 100vh;
+    height: 100%;
+    overflow: hidden;
+    background-color: var(--color-black);
+}
+
+.wrapper {
+    /* max-width: 1300px;
+    min-width: 320px; */
+    margin: auto;
+}
+header{
+    max-width: 1300px;
+    min-width: 320px;
+    margin: auto;
+    padding: 0 2%;
+}
+header, main, footer {
+    width: 100%;
+    padding-top: 1em;
+}
+
+#active {
+    color: var(--color-orange);
+    border-bottom: 3px solid var(--color-orange);
+}
+@media (max-width: 480px){
+    #active {
+        border-bottom: none;
+    }
+}
+
+.preloader {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  overflow: hidden;
+  background: #000000;
+  opacity: .9;
+  z-index: 100;
+}
+
+.preloader-img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 200px;
+  height: 200px;
+  background: url('../img/pre.gif') no-repeat 50% 50%;
+  background-size: 200px;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
+#cityAPI3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-orange);
+    font-weight: bold;
+}
+
+
+/*---------------------humburger menu--------------*/
+.menuToggle{
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: none;
+}
+ .menuToggle{
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: none;
+}
+
+@media( max-width: 769px){
+    .menuToggle{
+        display: block;
+        margin-right: 5%;
+    }
+    .header__nav{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 50px;
+    }
+    .menu{
+        position: absolute;;
+        left: 7%;
+        top: 15%;
+        height: 50px;
+
+    }
+
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+.hamburger {
+    width: 40px;
+    height: 4px;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    transition: 0.5s;
+    display: inline-block;
+    margin-left: 12px;
+}
+
+.hamburger:before,
+.hamburger:after {
+    content: "";
+    width: 40px;
+    height: 4px;
+    position: absolute;
+    background: #fff;
+    transition: 0.5s;
+}
+
+.hamburger:before {
+    top: -16px;
+}
+
+.hamburger:after {
+    top: 16px;
+}
+
+.icon.active .hamburger {
+    background: rgba(0, 0, 0, 0);
+}
+
+.icon.active .hamburger:before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.icon.active .hamburger:after {
+    top: 0;
+    transform: rotate(135deg);
+}
+/*---------thank you----------*/

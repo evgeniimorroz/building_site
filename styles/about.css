@@ -1,0 +1,78 @@
+.section__about{
+    position:relative;
+    margin-top: 5%;
+}
+
+.section__about-bg {
+    background-image: url('../img/rc33.png');
+    background-position: center;
+    background-size: cover;
+        background-attachment: fixed;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.section__about-inner {
+    max-width: 1300px;
+    min-width: 320px;
+    margin: auto;
+    display: flex;
+    position: relative;
+    padding: 5% 2%;
+}
+
+.about-inner-block {
+    width: 80%;
+    margin:5% auto;
+    display: flex;
+    font-family: var(--sec-font)
+}
+
+.info-info {
+    width: 50%;
+}
+
+.info-title h2{
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.5em;
+    margin-bottom: 5%;
+    letter-spacing: 0.05em;
+    color: var(--color-orange);
+}
+
+.about-info-list li {
+    padding: 1em 0 .5em 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 1.2em;
+    letter-spacing: 0.05em;
+    color: var(--color-white);
+    border-bottom: 3px solid var(--color-orange);
+}
+
+
+.inner-slide {
+    width: 320px;
+    margin-left: auto;
+    margin-top: auto;
+}
+
+.slider-sec {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.slider-sec-line {
+    overflow: hidden;
+}
+
+.line-items {
+    display: flex;
+
+}

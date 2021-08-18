@@ -1,0 +1,132 @@
+.section__gallery {
+    width: 100%;
+    padding: 0 2%;
+}
+
+
+.section__gallery-inner {
+    max-width: 1300px;
+    min-width: 320px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+.gallery-inner-title {
+    padding-top: 10%;
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5em;
+    line-height: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.gallery-inner-title::before {
+    content: '';
+    width: 200px;
+    height: 5px;
+    background-color: var(--color-orange);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.gallery-inner-title::after {
+    content: '';
+    width: 200px;
+    height: 5px;
+    background-color: var(--color-orange);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.gallery-inner-title h2 {
+    width: 40%;
+    margin: auto;
+    border-bottom: 5px solid transparent;
+}
+.gallery-inner-title h2:hover {
+    color: var(--color-orange);
+    border-bottom: 5px solid var(--color-orange);
+    transition: var(--transition);
+}
+
+.gallery-body {
+    width: 100%;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 7%;
+    place-items: center stretch;
+    padding-bottom: 20%;
+}
+
+.gallery-item {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: var(--transition);
+
+}
+.boreder {
+    position: relative;
+}
+.boreder::before {
+
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--color-orange);
+    border-radius: 10px;
+    position: absolute;
+    left: 3%;
+    top: 3%;
+
+}
+
+.gallery-item img {
+    width: 100%;
+    object-fit: cover;
+    transition: 1s;
+    display: block;
+    filter: brightness(70%);
+    z-index: 10;
+}
+.gallery-item:hover img {
+    transform: scale(1.2);
+    filter: brightness(30%);
+}
+
+.gallery-item:hover .img-text {
+    transition: var(--transition);
+    color: var(--color-orange);
+    background: var(--color-dark-grey);
+}
+
+.gallery-item .img-text {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    padding: 1em;
+    transform: translate(-50%, -50%);
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    letter-spacing: 0.05em;
+    color: var(--color-white);
+}
